@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/data")
+fetch("/data")
   .then((response) => {
     return response.json();
   })
@@ -7,7 +7,7 @@ fetch("http://localhost:3000/data")
     for (var i = 0; i < Array.length; i++) {
       options += '<option value="' + Array[i] + '" />';
     }
-    document.getElementById("players").innerHTML = options;
+    document.getElementById("players").innerHTML = "<script>alert(1)</script>";
     // .then((Array)=>{
     //here will be the display to the user (html) in dev with id "dataPreview"
     const playerToSearch = document.getElementById("playerName").value;

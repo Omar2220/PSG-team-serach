@@ -19,5 +19,6 @@
   "homepage": "https://github.com/aziz1980-ctrl/auto-complete#readme",
   "dependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "devDependencies": {}
 }

@@ -5,7 +5,7 @@ if Games_played===-1 that mean no data at pares website
 if Minutes_played===-1 that mean no data at pares website
 other fiedls that empty string because no data at pares website
 */
-const getPlayersName = require("./getJosn");
+const getPlayersName = require("./getJson");
 
 function getPlayers(request, response) {
   let body = "";
