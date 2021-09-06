@@ -13,8 +13,8 @@ In order tp run the project and turn on server.-->
   </head>
   <body>
     <form id="SerachForm">
-      <div class="aboveSrch">PSG Season 2021-2022</div>
-      <div>
+      <!-- <div class="aboveSrch">PSG Season 2021-2022</div> -->
+      <div class="searchBox">
         <input
           list="players"
           name="playerName"
@@ -23,7 +23,9 @@ In order tp run the project and turn on server.-->
           placeholder="type name of player"
         />
         <datalist id="players"></datalist>
-        <input type="submit" value="Serach Player" />
+        <button class="srchBtn" href="#">
+          <i class="material-icons"> search </i></button
+        >/>
       </div>
       <br />
       <br />
@@ -81,6 +83,6 @@ In order tp run the project and turn on server.-->
         </div>
       </div>
     </form>
-    <script src="/public/index.js"></script>
+    <script src="./public/index.js"></script>
   </body>
 </html>

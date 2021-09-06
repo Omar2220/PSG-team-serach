@@ -1,4 +1,4 @@
-fetch("/data")
+fetch("http://localhost:3000/data")
   .then((response) => {
     return response.json();
   })
@@ -7,7 +7,7 @@ fetch("/data")
     for (var i = 0; i < Array.length; i++) {
       options += '<option value="' + Array[i] + '" />';
     }
-    document.getElementById("players").innerHTML = "<script>alert(1)</script>";
+    document.getElementById("players").innerHTML = options;
     // .then((Array)=>{
     //here will be the display to the user (html) in dev with id "dataPreview"
     const playerToSearch = document.getElementById("playerName").value;
@@ -86,7 +86,7 @@ fetch("/data")
       //console.log(PlayerCardHtml);
       document.getElementById("dataPreview").innerHTML = PlayerCardHtml;
     } else {
-      document.getElementById("dataPreview").innerHTML = "Paris";
+      document.getElementById("dataPreview").innerHTML.value;
     }
   })
   .catch((err) => {
@@ -195,10 +195,9 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
         PlayerCardHtml += "</div>";
         PlayerCardHtml += "</div>";
-        console.log(PlayerCardHtml);
         document.getElementById("dataPreview").innerHTML = PlayerCardHtml;
       } else {
-        document.getElementById("dataPreview").innerHTML = "Paris";
+        document.getElementById("dataPreview").innerHTML.value;
       }
     })
     .catch((err) => {
